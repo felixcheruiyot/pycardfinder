@@ -75,7 +75,7 @@ def scan(path, ignore_items = "venv,.pyc,.git,node_modules"):
     print(f"Total number of files scanned: {total_files}")
     print(f"Number of cards found (incident): {incidents}")
     print(f"Ended at: {end_time}")
-    print(f"Time taken: minutes {time_taken_m} (={time_taken_s}s)")
+    print(f"Time taken: {time_taken_m}mins (={time_taken_s}s)")
     print("-------------------------------------------- End of report --------------------------------------------")
     print("Completed card scan")
 
