@@ -53,7 +53,8 @@ def find_cards(folder, ignore_items = "venv,.pyc,.git,node_modules"):
                                 if card_type.lower() != "unknown":
                                     incidents = incidents+1
                                     print(f"{line_number} : {filepath} {item} - found {card} {card_type}")
-        except UnicodeDecodeError as ex:
+        except (UnicodeDecodeError, OSError, FileNotFoundError) as ex:
+            # Put focus on what can be read for now, ignore what is not readble
             pass
         except Exception as ex:
             logger.error(f"Error: {ex}", exc_info=True)
