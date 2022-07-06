@@ -30,13 +30,13 @@ The following assumptions are made throughout the program searching for the card
 
 ### Detect cards under specific folder
 
-    pycardfinder --path="/home/user/Downloads"
+    python3.9 -m pycardfinder --path="/home/user/Downloads"
 
 
 ### Specify folders and extensions to ignore items list during run
 
-    pycardfinder --path="/home/user/Downloads" --ignore_items=.list,test,.pyc
+    python3.9 -m pycardfinder --path="/home/user/Downloads" --ignore_items=.list,test,.pyc
 
 ### Run and output results to a file
 
-    pycardfinder --path="/home/user/Downloads" > out.log
+    python3.9 -m pycardfinder --path="/home/user/Downloads" > out.log
