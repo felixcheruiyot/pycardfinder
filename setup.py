@@ -13,7 +13,7 @@ setup(
     keywords=['cards', 'pci', 'card', 'pycardfinder', 'card scan'],
     install_requires=[
         "card-identifier==1.0",
-        "click==8.1.3",
+        "click",
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
