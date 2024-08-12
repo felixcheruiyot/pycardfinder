@@ -78,3 +78,7 @@ def scan(path, ignore_items = "venv,.pyc,.git,node_modules"):
     print(f"Time taken: {time_taken_m}mins (={time_taken_s}s)")
     print("-------------------------------------------- End of report --------------------------------------------")
     print("Completed card scan")
+
+
+if __name__ == '__main__':
+    scan()

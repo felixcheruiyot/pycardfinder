@@ -40,3 +40,11 @@ The following assumptions are made throughout the program searching for the card
 ### Run and output results to a file
 
     python3.9 -m pycardfinder --path="/home/user/Downloads" > out.log
+
+### Build executible with nuitka
+
+    pip install nuitka
+
+    cd pycardfinder
+
+    python -m nuitka --follow-imports --onefile .\scanner.py
